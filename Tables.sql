@@ -80,3 +80,17 @@ CREATE TABLE `aqs_data_collection` (
   KEY `idx_asq_submittedAt` (`submittedAt`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Stores ASQ data collection form submissions';
 
+CREATE TABLE `datacollectors` (
+  `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(255) NOT NULL UNIQUE COMMENT 'Unique username/agent ID',
+  `fullName` VARCHAR(255) NOT NULL,
+  `formId` VARCHAR(100) NOT NULL COMMENT 'Associated form ID',
+  `status` VARCHAR(50) NOT NULL DEFAULT 'active' COMMENT 'active, inactive, suspended',
+  `createdAt` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updatedAt` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `uq_datacollectors_username` (`username`),
+  KEY `idx_datacollectors_status` (`status`),
+  KEY `idx_datacollectors_formId` (`formId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Stores data collector agent information';
+

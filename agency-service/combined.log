@@ -7098,3 +7098,151 @@
 {"data":{"id":269569,"pending":false},"level":"info","message":"Biller payment response from core system","service":"agency-service","status":200,"timestamp":"2026-01-15T18:30:16.861Z"}
 {"level":"info","message":" validation response","responseData":{"data":{"availTrxBalance":1638425.8599999999,"customerAccountName":"","deliveryMethods":[{"id":"direct_topup","name":"Direct Topup"}],"extraInfo":null,"localStockMgt":null,"pdtId":"airtime-mtn-rw","pdtName":"MTN Rwanda Airtime","pdtStatusId":"active","selectAmount":null,"stock":null,"stockedPdts":null,"svcProviderName":"MTN Rwanda","trxId":"dab08af9-8050-4fcd-bc3f-920811ca146a","trxResult":"direct_topup","vendMax":250000,"vendMin":100,"vendUnitId":"flexible","verticalId":"airtime"}},"service":"agency-service","timestamp":"2026-01-15T18:57:46.022Z"}
 {"data":{"id":269578,"pending":false},"level":"info","message":"Biller payment response from core system","service":"agency-service","status":200,"timestamp":"2026-01-15T18:57:55.329Z"}
+{"level":"info","message":"Hourly report cron job triggered","service":"agency-service","timestamp":"2026-01-15T19:00:00.861Z"}
+{"level":"info","message":"Starting hourly transaction report generation","service":"agency-service","timestamp":"2026-01-15T19:00:00.863Z"}
+{"level":"warn","message":"WhatsApp credentials not configured. Message not sent.","service":"agency-service","timestamp":"2026-01-15T19:00:00.928Z"}
+{"level":"info","message":"📊 *Hourly Transaction Report*\n⏰ 2026-01-15 20:00:00 - 2026-01-15 21:00:00\n\n📈 *Overall Statistics*\n• Total Transactions: 2\n• ✅ Successful: 2\n• ❌ Failed: 0\n• Success Rate: 100.00%\n\n💰 *Financial Summary*\n• Total Amount: 200 RWF\n• Success Amount: 200 RWF\n• Failed Amount: 0 RWF\n\n🔧 *By Service*\n\n*tax*\n  Total: 1 | ✅ 1 | ❌ 0\n  Amount: 100 RWF\n\n*airtime*\n  Total: 1 | ✅ 1 | ❌ 0\n  Amount: 100 RWF","phoneNumber":"250788123456","service":"agency-service","timestamp":"2026-01-15T19:00:00.929Z"}
+{"failed":0,"level":"info","message":"Hourly transaction report sent successfully","service":"agency-service","successful":2,"timestamp":"2026-01-15T19:00:00.930Z","total":2}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-15T19:01:09.247Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-15T19:01:09.252Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-16T09:51:25.712Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-16T09:51:25.716Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-16T09:53:26.515Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-16T09:53:27.408Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-16T09:53:27.460Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-16T09:53:27.726Z"}
+{"balance":22000,"level":"info","message":"Account balance check","minimumBalance":500,"service":"agency-service","sufficient":true,"timestamp":"2026-01-16T09:53:57.669Z"}
+{"balance":22000,"level":"info","message":"Account balance check","minimumBalance":500,"service":"agency-service","sufficient":true,"timestamp":"2026-01-16T09:57:11.272Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error checking form submission limit","service":"agency-service","stack":"SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306\n    at ConnectionManager.connect (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\moola-project\\moola-backend-apis\\agency-service\\node_modules\\sequelize\\lib\\dialects\\mysql\\connection-manager.js:92:17)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async ConnectionManager._connect (C:\\Users\\Bwiza Leathitia\\OneDrive\\Documents\\ddin-projects\\moola-project\\moola-backend-apis\\agency-service\\node_modules\\sequelize\\lib\\dialects\\abstract\\connection-manager.js:222:24)","timestamp":"2026-01-16T09:57:11.300Z"}
+{"agentId":58,"customerId":58,"formId":"69412502d80f0c1e7af075dd","ip":"::1","language":"en","level":"info","message":"Submitting form data","service":"agency-service","timestamp":"2026-01-16T09:57:11.321Z"}
+{"agentId":58,"formId":"69412502d80f0c1e7af075dd","level":"info","message":"Initial AQS form submission log created","service":"agency-service","timestamp":"2026-01-16T09:57:11.428Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","formId":"69412502d80f0c1e7af075dd","level":"error","message":"Error saving form submission to database","service":"agency-service","timestamp":"2026-01-16T09:57:11.442Z"}
+{"formId":"69412502d80f0c1e7af075dd","language":"en","level":"info","message":"Form submitted successfully","service":"agency-service","submissionId":"696a0b78e2679d17d5aaa3fc","timestamp":"2026-01-16T09:57:12.249Z"}
+{"agentId":58,"amount":"500","level":"info","message":"Generating agent commission","service":"agency-service","timestamp":"2026-01-16T09:57:12.284Z","transactionId":"TRXMKGPFKCUS1S46H","transferTypeId":"178"}
+{"agentId":58,"commissionId":2944,"level":"info","message":"Agent commission generated successfully","pending":false,"service":"agency-service","timestamp":"2026-01-16T09:57:13.128Z","transactionId":"TRXMKGPFKCUS1S46H"}
+{"agentId":58,"level":"info","message":"Commission generated successfully","service":"agency-service","success":true,"timestamp":"2026-01-16T09:57:13.167Z","transactionId":"TRXMKGPFKCUS1S46H"}
+{"agentId":58,"level":"info","message":"AQS form submission log updated to success","service":"agency-service","submissionId":"696a0b78e2679d17d5aaa3fc","timestamp":"2026-01-16T09:57:13.199Z","transactionId":"TRXMKGPFKCUS1S46H"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-16T09:57:13.279Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-16T09:57:13.552Z"}
+{"level":"info","message":"Hourly report cron job triggered","service":"agency-service","timestamp":"2026-01-16T10:00:00.085Z"}
+{"level":"info","message":"Starting hourly transaction report generation","service":"agency-service","timestamp":"2026-01-16T10:00:00.086Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error getting transaction stats","service":"agency-service","timestamp":"2026-01-16T10:00:00.094Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Failed to send hourly report","service":"agency-service","timestamp":"2026-01-16T10:00:00.095Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-16T10:08:09.295Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-16T10:08:10.231Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-16T10:08:10.249Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-16T10:08:10.526Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-16T10:20:34.084Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-16T10:20:35.170Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-16T10:20:35.263Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-16T10:20:35.565Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-16T19:52:53.682Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-16T19:52:53.686Z"}
+{"level":"info","message":"Hourly report cron job triggered","service":"agency-service","timestamp":"2026-01-16T20:00:00.977Z"}
+{"level":"info","message":"Starting hourly transaction report generation","service":"agency-service","timestamp":"2026-01-16T20:00:00.980Z"}
+{"level":"warn","message":"WhatsApp credentials not configured. Message not sent.","service":"agency-service","timestamp":"2026-01-16T20:00:01.031Z"}
+{"level":"info","message":"📊 *Hourly Transaction Report*\n⏰ 2026-01-16 21:00:00 - 2026-01-16 22:00:00\n\n📈 *Overall Statistics*\n• Total Transactions: 0\n• ✅ Successful: 0\n• ❌ Failed: 0\n• Success Rate: 0%\n\n💰 *Financial Summary*\n• Total Amount: 0 RWF\n• Success Amount: 0 RWF\n• Failed Amount: 0 RWF","phoneNumber":"250788123456","service":"agency-service","timestamp":"2026-01-16T20:00:01.032Z"}
+{"failed":0,"level":"info","message":"Hourly transaction report sent successfully","service":"agency-service","successful":0,"timestamp":"2026-01-16T20:00:01.033Z","total":0}
+{"level":"info","message":"Hourly report cron job triggered","service":"agency-service","timestamp":"2026-01-16T21:00:00.747Z"}
+{"level":"info","message":"Starting hourly transaction report generation","service":"agency-service","timestamp":"2026-01-16T21:00:00.777Z"}
+{"level":"warn","message":"WhatsApp credentials not configured. Message not sent.","service":"agency-service","timestamp":"2026-01-16T21:00:00.827Z"}
+{"level":"info","message":"📊 *Hourly Transaction Report*\n⏰ 2026-01-16 22:00:00 - 2026-01-16 23:00:00\n\n📈 *Overall Statistics*\n• Total Transactions: 0\n• ✅ Successful: 0\n• ❌ Failed: 0\n• Success Rate: 0%\n\n💰 *Financial Summary*\n• Total Amount: 0 RWF\n• Success Amount: 0 RWF\n• Failed Amount: 0 RWF","phoneNumber":"250788123456","service":"agency-service","timestamp":"2026-01-16T21:00:00.829Z"}
+{"failed":0,"level":"info","message":"Hourly transaction report sent successfully","service":"agency-service","successful":0,"timestamp":"2026-01-16T21:00:00.830Z","total":0}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T07:53:23.725Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T07:53:23.728Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-19T07:56:25.383Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-19T07:56:26.328Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-19T07:56:26.363Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-19T07:56:26.635Z"}
+{"level":"info","message":"Hourly report cron job triggered","service":"agency-service","timestamp":"2026-01-19T08:00:00.232Z"}
+{"level":"info","message":"Starting hourly transaction report generation","service":"agency-service","timestamp":"2026-01-19T08:00:00.237Z"}
+{"level":"warn","message":"WhatsApp credentials not configured. Message not sent.","service":"agency-service","timestamp":"2026-01-19T08:00:00.452Z"}
+{"level":"info","message":"📊 *Hourly Transaction Report*\n⏰ 2026-01-19 09:00:00 - 2026-01-19 10:00:00\n\n📈 *Overall Statistics*\n• Total Transactions: 0\n• ✅ Successful: 0\n• ❌ Failed: 0\n• Success Rate: 0%\n\n💰 *Financial Summary*\n• Total Amount: 0 RWF\n• Success Amount: 0 RWF\n• Failed Amount: 0 RWF","phoneNumber":"250788123456","service":"agency-service","timestamp":"2026-01-19T08:00:00.454Z"}
+{"failed":0,"level":"info","message":"Hourly transaction report sent successfully","service":"agency-service","successful":0,"timestamp":"2026-01-19T08:00:00.455Z","total":0}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-19T08:01:33.920Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-19T08:01:34.836Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-19T08:01:34.859Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-19T08:01:35.137Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-19T08:08:31.469Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-19T08:08:32.312Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-19T08:08:32.334Z"}
+{"formsCount":2,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-19T08:08:32.576Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-19T08:14:59.038Z"}
+{"formsCount":3,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-19T08:14:59.806Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-19T08:14:59.836Z"}
+{"formsCount":3,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-19T08:15:00.101Z"}
+{"level":"info","message":"Hourly report cron job triggered","service":"agency-service","timestamp":"2026-01-19T09:00:00.589Z"}
+{"level":"info","message":"Starting hourly transaction report generation","service":"agency-service","timestamp":"2026-01-19T09:00:00.592Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error getting transaction stats","service":"agency-service","timestamp":"2026-01-19T09:00:00.635Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Failed to send hourly report","service":"agency-service","timestamp":"2026-01-19T09:00:00.636Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-19T09:11:45.296Z"}
+{"formsCount":3,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-19T09:11:46.427Z"}
+{"ip":"::1","language":"en","level":"info","message":"Fetching external forms","service":"agency-service","timestamp":"2026-01-19T09:11:46.455Z"}
+{"formsCount":3,"language":"en","level":"info","message":"Forms retrieved successfully","service":"agency-service","timestamp":"2026-01-19T09:11:46.748Z"}
+{"balance":0,"level":"info","message":"Account balance check","minimumBalance":500,"service":"agency-service","sufficient":false,"timestamp":"2026-01-19T09:12:09.493Z"}
+{"balance":0,"deficit":500,"level":"warn","message":"Insufficient account balance","minimumBalance":500,"service":"agency-service","timestamp":"2026-01-19T09:12:09.494Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T09:24:48.210Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T09:24:48.221Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T09:34:12.653Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T09:34:12.659Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T09:34:46.528Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T09:34:46.531Z"}
+{"level":"info","message":"Hourly report cron job triggered","service":"agency-service","timestamp":"2026-01-19T10:00:00.688Z"}
+{"level":"info","message":"Starting hourly transaction report generation","service":"agency-service","timestamp":"2026-01-19T10:00:00.690Z"}
+{"level":"warn","message":"WhatsApp credentials not configured. Message not sent.","service":"agency-service","timestamp":"2026-01-19T10:00:00.749Z"}
+{"level":"info","message":"📊 *Hourly Transaction Report*\n⏰ 2026-01-19 11:00:00 - 2026-01-19 12:00:00\n\n📈 *Overall Statistics*\n• Total Transactions: 0\n• ✅ Successful: 0\n• ❌ Failed: 0\n• Success Rate: 0%\n\n💰 *Financial Summary*\n• Total Amount: 0 RWF\n• Success Amount: 0 RWF\n• Failed Amount: 0 RWF","phoneNumber":"250788123456","service":"agency-service","timestamp":"2026-01-19T10:00:00.749Z"}
+{"failed":0,"level":"info","message":"Hourly transaction report sent successfully","service":"agency-service","successful":0,"timestamp":"2026-01-19T10:00:00.750Z","total":0}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T10:20:34.389Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T10:20:34.393Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T11:58:59.674Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T11:58:59.678Z"}
+{"level":"info","message":"Hourly report cron job triggered","service":"agency-service","timestamp":"2026-01-19T12:00:00.078Z"}
+{"level":"info","message":"Starting hourly transaction report generation","service":"agency-service","timestamp":"2026-01-19T12:00:00.101Z"}
+{"level":"warn","message":"WhatsApp credentials not configured. Message not sent.","service":"agency-service","timestamp":"2026-01-19T12:00:00.184Z"}
+{"level":"info","message":"📊 *Hourly Transaction Report*\n⏰ 2026-01-19 13:00:00 - 2026-01-19 14:00:00\n\n📈 *Overall Statistics*\n• Total Transactions: 0\n• ✅ Successful: 0\n• ❌ Failed: 0\n• Success Rate: 0%\n\n💰 *Financial Summary*\n• Total Amount: 0 RWF\n• Success Amount: 0 RWF\n• Failed Amount: 0 RWF","phoneNumber":"250788123456","service":"agency-service","timestamp":"2026-01-19T12:00:00.184Z"}
+{"failed":0,"level":"info","message":"Hourly transaction report sent successfully","service":"agency-service","successful":0,"timestamp":"2026-01-19T12:00:00.186Z","total":0}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T12:06:28.514Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T12:06:28.518Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T18:27:52.796Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T18:27:52.803Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T18:44:31.087Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T18:44:31.094Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T18:44:41.425Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T18:44:41.431Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T18:44:48.607Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T18:44:48.610Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T18:44:53.798Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T18:44:53.804Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T18:44:58.599Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T18:44:58.604Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T18:45:02.132Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T18:45:02.137Z"}
+{"level":"info","message":"Hourly report cron job triggered","service":"agency-service","timestamp":"2026-01-19T19:00:00.577Z"}
+{"level":"info","message":"Starting hourly transaction report generation","service":"agency-service","timestamp":"2026-01-19T19:00:00.579Z"}
+{"level":"warn","message":"WhatsApp credentials not configured. Message not sent.","service":"agency-service","timestamp":"2026-01-19T19:00:00.726Z"}
+{"level":"info","message":"📊 *Hourly Transaction Report*\n⏰ 2026-01-19 20:00:00 - 2026-01-19 21:00:00\n\n📈 *Overall Statistics*\n• Total Transactions: 0\n• ✅ Successful: 0\n• ❌ Failed: 0\n• Success Rate: 0%\n\n💰 *Financial Summary*\n• Total Amount: 0 RWF\n• Success Amount: 0 RWF\n• Failed Amount: 0 RWF","phoneNumber":"250788123456","service":"agency-service","timestamp":"2026-01-19T19:00:00.728Z"}
+{"failed":0,"level":"info","message":"Hourly transaction report sent successfully","service":"agency-service","successful":0,"timestamp":"2026-01-19T19:00:00.729Z","total":0}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-19T19:17:30.448Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-19T19:17:30.454Z"}
+{"level":"info","message":"Initializing scheduled transaction reports","service":"agency-service","timestamp":"2026-01-20T04:19:19.210Z"}
+{"dailyEvening":"Every day at 8:00 PM","dailyMorning":"Every day at 8:00 AM","hourly":"Every hour at :00","level":"info","message":"Scheduled jobs initialized successfully","service":"agency-service","timestamp":"2026-01-20T04:19:19.217Z"}
+{"level":"info","message":"Hourly report cron job triggered","service":"agency-service","timestamp":"2026-01-20T06:00:00.752Z"}
+{"level":"info","message":"Starting hourly transaction report generation","service":"agency-service","timestamp":"2026-01-20T06:00:00.764Z"}
+{"level":"info","message":"Daily morning report cron job triggered","service":"agency-service","timestamp":"2026-01-20T06:00:00.799Z"}
+{"level":"info","message":"Starting daily transaction report generation","service":"agency-service","timestamp":"2026-01-20T06:00:00.800Z"}
+{"level":"warn","message":"WhatsApp credentials not configured. Message not sent.","service":"agency-service","timestamp":"2026-01-20T06:00:00.836Z"}
+{"level":"info","message":"📊 *Daily Transaction Report*\n⏰ 2026-01-20 00:00:00 - 2026-01-20 23:59:59\n\n📈 *Overall Statistics*\n• Total Transactions: 0\n• ✅ Successful: 0\n• ❌ Failed: 0\n• Success Rate: 0%\n\n💰 *Financial Summary*\n• Total Amount: 0 RWF\n• Success Amount: 0 RWF\n• Failed Amount: 0 RWF","phoneNumber":"250788123456","service":"agency-service","timestamp":"2026-01-20T06:00:00.837Z"}
+{"failed":0,"level":"info","message":"Daily transaction report sent successfully","service":"agency-service","successful":0,"timestamp":"2026-01-20T06:00:00.837Z","total":0}
+{"level":"warn","message":"WhatsApp credentials not configured. Message not sent.","service":"agency-service","timestamp":"2026-01-20T06:00:00.839Z"}
+{"level":"info","message":"📊 *Hourly Transaction Report*\n⏰ 2026-01-20 07:00:00 - 2026-01-20 08:00:00\n\n📈 *Overall Statistics*\n• Total Transactions: 0\n• ✅ Successful: 0\n• ❌ Failed: 0\n• Success Rate: 0%\n\n💰 *Financial Summary*\n• Total Amount: 0 RWF\n• Success Amount: 0 RWF\n• Failed Amount: 0 RWF","phoneNumber":"250788123456","service":"agency-service","timestamp":"2026-01-20T06:00:00.839Z"}
+{"failed":0,"level":"info","message":"Hourly transaction report sent successfully","service":"agency-service","successful":0,"timestamp":"2026-01-20T06:00:00.840Z","total":0}
+{"level":"info","message":"Hourly report cron job triggered","service":"agency-service","timestamp":"2026-01-20T07:00:00.305Z"}
+{"level":"info","message":"Starting hourly transaction report generation","service":"agency-service","timestamp":"2026-01-20T07:00:00.306Z"}
+{"level":"warn","message":"WhatsApp credentials not configured. Message not sent.","service":"agency-service","timestamp":"2026-01-20T07:00:00.311Z"}
+{"level":"info","message":"📊 *Hourly Transaction Report*\n⏰ 2026-01-20 08:00:00 - 2026-01-20 09:00:00\n\n📈 *Overall Statistics*\n• Total Transactions: 4\n• ✅ Successful: 0\n• ❌ Failed: 0\n• Success Rate: 0.00%\n\n💰 *Financial Summary*\n• Total Amount: 1,000 RWF\n• Success Amount: 0 RWF\n• Failed Amount: 0 RWF\n\n🔧 *By Service*\n\n*AQS*\n  Total: 2 | ✅ 0 | ❌ 0\n  Amount: 0 RWF\n\n*Commission*\n  Total: 2 | ✅ 0 | ❌ 0\n  Amount: 1,000 RWF","phoneNumber":"250788123456","service":"agency-service","timestamp":"2026-01-20T07:00:00.312Z"}
+{"failed":0,"level":"info","message":"Hourly transaction report sent successfully","service":"agency-service","successful":0,"timestamp":"2026-01-20T07:00:00.312Z","total":4}
+{"level":"info","message":"Hourly report cron job triggered","service":"agency-service","timestamp":"2026-01-20T08:00:00.180Z"}
+{"level":"info","message":"Starting hourly transaction report generation","service":"agency-service","timestamp":"2026-01-20T08:00:00.184Z"}
+{"level":"warn","message":"WhatsApp credentials not configured. Message not sent.","service":"agency-service","timestamp":"2026-01-20T08:00:00.194Z"}
+{"level":"info","message":"📊 *Hourly Transaction Report*\n⏰ 2026-01-20 09:00:00 - 2026-01-20 10:00:00\n\n📈 *Overall Statistics*\n• Total Transactions: 1\n• ✅ Successful: 0\n• ❌ Failed: 0\n• Success Rate: 0.00%\n\n💰 *Financial Summary*\n• Total Amount: 500 RWF\n• Success Amount: 0 RWF\n• Failed Amount: 0 RWF\n\n🔧 *By Service*\n\n*AQS*\n  Total: 1 | ✅ 0 | ❌ 0\n  Amount: 500 RWF","phoneNumber":"250788123456","service":"agency-service","timestamp":"2026-01-20T08:00:00.195Z"}
+{"failed":0,"level":"info","message":"Hourly transaction report sent successfully","service":"agency-service","successful":0,"timestamp":"2026-01-20T08:00:00.196Z","total":1}

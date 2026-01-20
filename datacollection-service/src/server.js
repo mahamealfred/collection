@@ -7,36 +7,30 @@ import {rateLimit} from "express-rate-limit";
 import {RedisStore} from "rate-limit-redis";
 import {RateLimiterRedis} from "rate-limiter-flexible";
 import errorHandler from "./middleware/errorHandler.js";
-import routes from "./routes/identity-service.js";
+import dataColl from "./routes/datacollection-routes.js";
+import dataCollectorsRouter from "./routes/datacollectors-routes.js";
 import { i18nManager, sharedConfig, loggerConfig } from "@moola/shared";
 
 dotenv.config();
 
 // Initialize shared configuration
 const { database, redis, logger, config } = await sharedConfig.init({
-  serviceName: 'identity-service',
+  serviceName: 'datacollection-service',
   enableDatabase: true,
   enableRedis: true,
-  requiredConfig: ['database.name', 'redis.url']
+  requiredConfig: ['database.name', 'database.user', 'redis.url']
 });
 
 // Initialize i18n
 await i18nManager.init();
 
 const app = express();
-const PORT = config.server.port || process.env.PORT || 4004;
-
-// Use shared database instead of local config
-const sequelize = database;
+const PORT = process.env.PORT || 4009;
 
 // Security and parsing middleware
 app.use(helmet());
 app.use(cors({
-  origin: config.server.corsOrigin,
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Language', 'Accept-Language'],
-  exposedHeaders: ['X-Language']
+  origin: config.server.corsOrigin
 }));
 app.use(express.json({ limit: config.server.bodyLimit }));
 
@@ -47,7 +41,7 @@ app.use(i18nManager.middleware());
 // DDos protection and rate limiting using shared configuration
 const rateLimiter = new RateLimiterRedis({
     storeClient: redis,
-    keyPrefix: "identity-middleware",
+    keyPrefix: "agency-middleware",
     points: 10,
     duration: 1,
   });
@@ -84,24 +78,25 @@ app.get('/health', async (req, res) => {
     const health = await sharedConfig.healthCheck();
     res.json({
       status: 'ok',
-      service: 'identity-service',
+      service: 'datacollection-service',
       timestamp: new Date().toISOString(),
       ...health
     });
   } catch (error) {
     res.status(500).json({
       status: 'error',
-      service: 'identity-service',
+      service: 'datacollection-service',
       error: error.message
     });
   }
 });
-  
-// Apply rate limiter to sensitive routes
-app.use("/api/agency/auth/register", sensitiveEndpointsLimiter);
+
+// Apply rate limiter to sensitive routes if needed
+// app.use("/api/datacollection/auth", sensitiveEndpointsLimiter);
 
 // Routes
-app.use("/api/agency/auth", routes);
+app.use("/api/datacollection", dataColl);
+app.use("/api/datacollection/datacollectors", dataCollectorsRouter);
 
 // Error handler
 app.use(errorHandler);
@@ -123,7 +118,7 @@ process.on('SIGTERM', gracefulShutdown);
 process.on('SIGINT', gracefulShutdown);
 
 app.listen(PORT, () => {
-    logger.info(`Identity service running on port ${PORT}`);
+    logger.info(`Data Collection service running on port ${PORT}`);
     logger.info(`Environment: ${config.server.env}`);
     logger.info(`CORS Origin: ${config.server.corsOrigin}`);
 });

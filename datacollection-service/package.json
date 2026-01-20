@@ -1,0 +1,39 @@
+{
+  "name": "datacollection-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@moola/shared": "file:../shared",
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.1",
+    "helmet": "^8.1.0",
+    "ioredis": "^5.6.1",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2-promise": "^0.1.4",
+    "node-cron": "^3.0.3",
+    "rate-limit-redis": "^4.2.1",
+    "rate-limiter-flexible": "^7.1.1",
+    "sequelize": "^6.37.7",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

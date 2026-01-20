@@ -9,7 +9,7 @@ import { generateAgentCommission } from '../services/agentCommissionService.js';
 import { insertLogs, updateLogs, updateTransfersTable } from '../utils/logsData.js';
 dotenv.config();
 
-const API_KEY = process.env.DATA_COLLECTION_API_KEY || 'ak_686b17e73ff609c38ade4afa536764032e04695cbc5fec3c14b23af15ee1b403';
+const API_KEY = process.env.DATA_COLLECTION_API_KEY ;
 const BASE_URL = process.env.DATA_COLLECTION_BASE_URL || 'https://afriqollect.com/api';
 
 /**
@@ -187,22 +187,7 @@ export const submitFormData = async (req, res) => {
 
     // Insert initial log entry with pending status (ONCE)
     try {
-      const initialDescription = `AQS Form Submission - Form ID: ${formId}, Agent: ${agent_name}`;
       
-      await insertLogs(
-        null, // Transaction ID will be updated when commission is generated
-        'pending',
-        initialDescription,
-        0, // amount
-        0, // customer_charge
-        agent_id,
-        agent_name,
-        'pending', // initial status
-        'AQS', // service_name
-        formId, // transaction_reference (form ID initially)
-        customerId,
-        null // token
-      );
       
       logger.info('Initial AQS form submission log created', {
         formId,
@@ -389,7 +374,7 @@ export const submitFormData = async (req, res) => {
 
     // Log AQS form submission transaction - UPDATE existing log with commission ID as transaction ID
     try {
-      const transactionId = commissionResult?.transactionId || commissionResult?.data?.id || null;
+      const transactionId = commissionResult?.data?.id || null;
       const thirdPartyStatus = response.data?.status || externalStatus || 'submitted';
       const description = `AQS Form Submission - Submission ID: ${submissionId}, Form ID: ${formId}, Agent: ${agent_name}, Commission ID: ${transactionId || 'N/A'}`;
       

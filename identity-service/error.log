@@ -355,3 +355,13 @@
 {"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-15T14:21:30.598Z","username":"Mahame"}
 {"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-15T14:22:15.029Z","username":"Mahame"}
 {"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-15T18:29:18.025Z","username":"Mahame"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-16T10:40:05.998Z","username":"Mahame"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-16T10:40:11.295Z","username":"Mahame"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-16T10:40:17.026Z","username":"Mahame"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-16T20:45:00.917Z","username":"liveagent"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-16T20:45:13.498Z","username":"liveagent"}
+{"error":"read ECONNRESET","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-19T08:57:53.849Z","username":"Mahame"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-19T09:10:36.324Z","username":"Mahame"}
+{"error":"notNull Violation: RefreshToken.agentCategory cannot be null","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-19T12:34:23.095Z","username":"aqsuser"}
+{"error":"notNull Violation: RefreshToken.agentCategory cannot be null","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-19T12:35:01.581Z","username":"aqsuser"}
+{"error":"notNull Violation: RefreshToken.agentCategory cannot be null","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-01-19T12:35:59.634Z","username":"aqsuser"}

@@ -1,7 +1,6 @@
 import axios from 'axios';
 import logger from '../utils/logger.js';
 import { insertLogs, updateLogs } from '../utils/logsData.js';
-import { generateUniqueId } from '../utils/helper.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -12,7 +11,7 @@ const COMMISSION_AMOUNT = '500';
 const TRANSFER_TYPE_ID = '178';
 const CURRENCY_SYMBOL = 'Rwf';
 const COMMISSION_DESCRIPTION = 'AQS Commission Payment to Agent';
-const SERVICE_NAME = 'Commission';
+const SERVICE_NAME = 'AQS';
 
 /**
  * Generate agent commission payment after successful form submission
@@ -33,8 +32,7 @@ export const generateAgentCommission = async (agentId, agentName = 'Unknown') =>
       };
     }
 
-    // Generate unique transaction ID
-    transactionId = generateUniqueId();
+  
 
     // Get AQS credentials from environment variables
     const username = process.env.AQS_USERNAME;
@@ -45,7 +43,7 @@ export const generateAgentCommission = async (agentId, agentName = 'Unknown') =>
       
       // Log failed transaction
       await insertLogs(
-        transactionId,
+        null,
         'failed',
         'Missing AQS credentials in environment variables',
         COMMISSION_AMOUNT,
@@ -67,21 +65,7 @@ export const generateAgentCommission = async (agentId, agentName = 'Unknown') =>
       };
     }
 
-    // Insert initial log entry with 'pending' status
-    await insertLogs(
-      transactionId,
-      'pending',
-      `${COMMISSION_DESCRIPTION} - Initiating payment`,
-      COMMISSION_AMOUNT,
-      0,
-      agentId,
-      agentName,
-      'pending',
-      SERVICE_NAME,
-      null,
-      agentId,
-      null
-    );
+   
 
     // Prepare basic authentication
     const basicAuth = Buffer.from(`${username}:${password}`).toString('base64');
@@ -116,7 +100,8 @@ export const generateAgentCommission = async (agentId, agentName = 'Unknown') =>
     );
 
     // Check for successful response
-    if (response.data?.id && response.data?.pending !== undefined) {
+    if (response.data?.id && response.data?.pending !== undefined) {  
+      transactionId = response.data.id;
       logger.info('Agent commission generated successfully', {
         transactionId,
         agentId,
@@ -124,14 +109,21 @@ export const generateAgentCommission = async (agentId, agentName = 'Unknown') =>
         pending: response.data.pending
       });
 
-      // Update log entry with success status
-      await updateLogs(
-        transactionId,
-        'successful',
-        'successful',
-        response.data.id.toString(),
-        `Commission payment successful - Commission ID: ${response.data.id}`
-      );
+      
+    await insertLogs(
+      transactionId,
+      'successful',
+      `${COMMISSION_DESCRIPTION} - Initiating payment`,
+      COMMISSION_AMOUNT,
+      0,
+      agentId,
+      agentName,
+      'Submittedd',
+      SERVICE_NAME,
+      null,
+      agentId,
+      null
+    );
 
       return {
         success: true,

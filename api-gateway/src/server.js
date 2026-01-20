@@ -167,7 +167,29 @@ app.use(
   "/v1/clients/validation",
   proxy(process.env.CLIENT_SERVICE_URL, proxyOptions)
 );
+//data collection service proxy
+app.use(
+  "/v1/datacollection",
+  //validateToken,
+  proxy(process.env.DATACOLLECTION_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers["Content-Type"] = "application/json";
+      // Ensure language header is forwarded
+      if (srcReq.language) {
+        proxyReqOpts.headers["x-language"] = srcReq.language;
+      }
+      return proxyReqOpts;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(
+        `Response received from Data Collection service: ${proxyRes.statusCode}`
+      );
 
+      return proxyResData;
+    },
+  })
+);
 
 
 //setting up proxy for our payment service agency prod
@@ -326,13 +348,13 @@ app.use(errorHandler);
 
 // Graceful shutdown
 const gracefulShutdown = async () => {
-  logger.info('🔄 Received shutdown signal, closing API Gateway gracefully...');
+  logger.info('Received shutdown signal, closing API Gateway gracefully...');
   
   try {
     await sharedConfig.shutdown();
     process.exit(0);
   } catch (error) {
-    logger.error('❌ Error during graceful shutdown:', error);
+    logger.error('Error during graceful shutdown:', error);
     process.exit(1);
   }
 };
@@ -341,10 +363,10 @@ process.on('SIGTERM', gracefulShutdown);
 process.on('SIGINT', gracefulShutdown);
 
 app.listen(PORT, () => {
-  logger.info(`🚀 API Gateway running on port ${PORT}`);
-  logger.info(`📊 Environment: ${config.server.env}`);
-  logger.info(`🌐 CORS Origin: ${config.server.corsOrigin}`);
-  logger.info(`🔗 Services: ${JSON.stringify(config.services)}`);
+  logger.info(`API Gateway running on port ${PORT}`);
+  logger.info(`Environment: ${config.server.env}`);
+  logger.info(`CORS Origin: ${config.server.corsOrigin}`);
+  logger.info(`Services: ${JSON.stringify(config.services)}`);
 });
 
 // Unhandled promise rejection

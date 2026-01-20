@@ -9,7 +9,6 @@ import {RateLimiterRedis} from "rate-limiter-flexible";
 import errorHandler from "./middleware/errorHandler.js";
 import routes from "./routes/banking-routes.js";
 import reportRoutes from "./routes/report-routes.js";
-import dataColl from "./routes/datacollection-routes.js";
 import { i18nManager, sharedConfig, loggerConfig } from "@moola/shared";
 import { initializeScheduledJobs } from "./jobs/reportScheduler.js";
 
@@ -99,7 +98,7 @@ app.get('/health', async (req, res) => {
 // Routes
 app.use("/api/agency", routes);
 app.use("/api/reports", reportRoutes);
-app.use("/api/agency", dataColl);
+
 
 // Error handler
 app.use(errorHandler);
@@ -115,7 +114,7 @@ const gracefulShutdown = async () => {
     await sharedConfig.shutdown();
     process.exit(0);
   } catch (error) {
-    logger.error('❌ Error during graceful shutdown:', error);
+    logger.error('Error during graceful shutdown:', error);
     process.exit(1);
   }
 };
@@ -124,9 +123,9 @@ process.on('SIGTERM', gracefulShutdown);
 process.on('SIGINT', gracefulShutdown);
 
 app.listen(PORT, () => {
-    logger.info(`🚀 Agency service running on port ${PORT}`);
-    logger.info(`📊 Environment: ${config.server.env}`);
-    logger.info(`🌐 CORS Origin: ${config.server.corsOrigin}`);
+    logger.info(`Agency service running on port ${PORT}`);
+    logger.info(`Environment: ${config.server.env}`);
+    logger.info(`CORS Origin: ${config.server.corsOrigin}`);
 });
 
 // Unhandled promise rejection
