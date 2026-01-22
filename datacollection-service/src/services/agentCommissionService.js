@@ -8,7 +8,10 @@ dotenv.config();
 const CYCLOS_URL = process.env.CYCLOS_URL ;
 const COMMISSION_API_URL = `${CYCLOS_URL}/rest/payments/confirmMemberPayment`;
 const COMMISSION_AMOUNT = '500';
-const TRANSFER_TYPE_ID = '178';
+// Testing transfer type id
+//const TRANSFER_TYPE_ID = '178';
+// Production transfer type id
+const TRANSFER_TYPE_ID = '122';
 const CURRENCY_SYMBOL = 'Rwf';
 const COMMISSION_DESCRIPTION = 'AQS Commission Payment to Agent';
 const SERVICE_NAME = 'AQS';
