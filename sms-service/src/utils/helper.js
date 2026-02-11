@@ -4,7 +4,7 @@ import axios from "axios";
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 
-import { loadTariffs } from "./loadTariffs.js";
+import { loadTariffs } from "../utils/loadTariffs.js";
 
 dotenv.config()
 

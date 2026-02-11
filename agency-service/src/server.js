@@ -11,6 +11,8 @@ import routes from "./routes/banking-routes.js";
 import reportRoutes from "./routes/report-routes.js";
 import { i18nManager, sharedConfig, loggerConfig } from "@moola/shared";
 import { initializeScheduledJobs } from "./jobs/reportScheduler.js";
+import swaggerUi from "swagger-ui-express";
+import swaggerDocument from "./docs/openapi.js";
 
 dotenv.config();
 
@@ -91,6 +93,12 @@ app.get('/health', async (req, res) => {
     });
   }
 });
+
+// Swagger docs
+app.get('/openapi.json', (req, res) => {
+  res.json(swaggerDocument);
+});
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Apply rate limiter to sensitive routes if needed
 // app.use("/api/agency/auth", sensitiveEndpointsLimiter);

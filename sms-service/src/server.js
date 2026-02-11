@@ -7,15 +7,18 @@ import {rateLimit} from "express-rate-limit";
 import {RedisStore} from "rate-limit-redis";
 import {RateLimiterRedis} from "rate-limiter-flexible";
 import errorHandler from "./middleware/errorHandler.js";
-import dataColl from "./routes/datacollection-routes.js";
-import dataCollectorsRouter from "./routes/datacollectors-routes.js";
+import routes from "./routes/banking-routes.js";
+import reportRoutes from "./routes/report-routes.js";
 import { i18nManager, sharedConfig, loggerConfig } from "@moola/shared";
+import { initializeScheduledJobs } from "./jobs/reportScheduler.js";
+import swaggerUi from "swagger-ui-express";
+import swaggerDocument from "./docs/openapi.js";
 
 dotenv.config();
 
 // Initialize shared configuration
 const { database, redis, logger, config } = await sharedConfig.init({
-  serviceName: 'datacollection-service',
+  serviceName: 'agency-service',
   enableDatabase: true,
   enableRedis: true,
   requiredConfig: ['database.name', 'database.user', 'redis.url']
@@ -25,7 +28,7 @@ const { database, redis, logger, config } = await sharedConfig.init({
 await i18nManager.init();
 
 const app = express();
-const PORT = process.env.PORT || 4009;
+const PORT = config.server.port || process.env.PORT || 4001;
 
 // Security and parsing middleware
 app.use(helmet());
@@ -78,32 +81,42 @@ app.get('/health', async (req, res) => {
     const health = await sharedConfig.healthCheck();
     res.json({
       status: 'ok',
-      service: 'datacollection-service',
+      service: 'agency-service',
       timestamp: new Date().toISOString(),
       ...health
     });
   } catch (error) {
     res.status(500).json({
       status: 'error',
-      service: 'datacollection-service',
+      service: 'agency-service',
       error: error.message
     });
   }
 });
 
+// Swagger docs
+app.get('/openapi.json', (req, res) => {
+  res.json(swaggerDocument);
+});
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 // Apply rate limiter to sensitive routes if needed
-// app.use("/api/datacollection/auth", sensitiveEndpointsLimiter);
+// app.use("/api/agency/auth", sensitiveEndpointsLimiter);
 
 // Routes
-app.use("/api/datacollection", dataColl);
-app.use("/api/datacollection/datacollectors", dataCollectorsRouter);
+app.use("/api/agency", routes);
+app.use("/api/reports", reportRoutes);
+
 
 // Error handler
 app.use(errorHandler);
 
+// Initialize scheduled transaction reports
+initializeScheduledJobs();
+
 // Graceful shutdown
 const gracefulShutdown = async () => {
-  logger.info('Received shutdown signal, closing server gracefully...');
+  logger.info('🔄 Received shutdown signal, closing server gracefully...');
   
   try {
     await sharedConfig.shutdown();
@@ -118,7 +131,7 @@ process.on('SIGTERM', gracefulShutdown);
 process.on('SIGINT', gracefulShutdown);
 
 app.listen(PORT, () => {
-    logger.info(`Data Collection service running on port ${PORT}`);
+    logger.info(`Agency service running on port ${PORT}`);
     logger.info(`Environment: ${config.server.env}`);
     logger.info(`CORS Origin: ${config.server.corsOrigin}`);
 });

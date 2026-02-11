@@ -9,6 +9,8 @@ import {RateLimiterRedis} from "rate-limiter-flexible";
 import errorHandler from "./middleware/errorHandler.js";
 import routes from "./routes/identity-service.js";
 import { i18nManager, sharedConfig, loggerConfig } from "@moola/shared";
+import swaggerUi from "swagger-ui-express";
+import swaggerDocument from "./docs/openapi.js";
 
 dotenv.config();
 
@@ -96,6 +98,12 @@ app.get('/health', async (req, res) => {
     });
   }
 });
+
+// Swagger docs
+app.get('/openapi.json', (req, res) => {
+  res.json(swaggerDocument);
+});
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
   
 // Apply rate limiter to sensitive routes
 app.use("/api/agency/auth/register", sensitiveEndpointsLimiter);

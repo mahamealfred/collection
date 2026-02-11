@@ -9,6 +9,8 @@ import proxy from "express-http-proxy";
 import errorHandler from "./middleware/errorHandler.js";
 import  { validateToken } from "./middleware/authMiddleware.js";
 import { i18nManager, sharedConfig, loggerConfig } from "@moola/shared";
+import swaggerUi from "swagger-ui-express";
+import swaggerDocument from "./docs/openapi.js";
 
 dotenv.config();
 
@@ -64,6 +66,12 @@ const ratelimitOptions = rateLimit({
 });
 
 app.use(ratelimitOptions);
+
+// Swagger docs
+app.get('/openapi.json', (req, res) => {
+  res.json(swaggerDocument);
+});
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 const proxyOptions = {
   proxyReqPathResolver: (req) => {
@@ -167,14 +175,92 @@ app.use(
   "/v1/clients/validation",
   proxy(process.env.CLIENT_SERVICE_URL, proxyOptions)
 );
-//data collection service proxy
+
+//
 app.use(
-  "/v1/datacollection",
+  "/v1/thirdparty/urubutopay",
+  //validateToken,
+  proxy(process.env.URUBUTOPAY_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers["Content-Type"] = "application/json";
+      // Forward authentication headers to collection-service
+      if (srcReq.headers["x-api-key"]) {
+        proxyReqOpts.headers["x-api-key"] = srcReq.headers["x-api-key"];
+      }
+      if (srcReq.headers["authorization"]) {
+        proxyReqOpts.headers["authorization"] = srcReq.headers["authorization"];
+      }
+      if (srcReq.headers["x-signature"]) {
+        proxyReqOpts.headers["x-signature"] = srcReq.headers["x-signature"];
+      }
+      // Ensure language header is forwarded
+      if (srcReq.language) {
+        proxyReqOpts.headers["x-language"] = srcReq.language;
+      }
+      return proxyReqOpts;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(
+        `Response received from Urubuto Pay service: ${proxyRes.statusCode}`
+      );
+
+      return proxyResData;
+    },
+  })
+);
+
+//collection service proxy
+app.use(
+  "/v1/collection",
   //validateToken,
   proxy(process.env.DATACOLLECTION_SERVICE_URL, {
     ...proxyOptions,
     proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
       proxyReqOpts.headers["Content-Type"] = "application/json";
+      // Forward authentication headers to collection-service
+      if (srcReq.headers["x-api-key"]) {
+        proxyReqOpts.headers["x-api-key"] = srcReq.headers["x-api-key"];
+      }
+      if (srcReq.headers["authorization"]) {
+        proxyReqOpts.headers["authorization"] = srcReq.headers["authorization"];
+      }
+      if (srcReq.headers["x-signature"]) {
+        proxyReqOpts.headers["x-signature"] = srcReq.headers["x-signature"];
+      }
+      // Ensure language header is forwarded
+      if (srcReq.language) {
+        proxyReqOpts.headers["x-language"] = srcReq.language;
+      }
+      return proxyReqOpts;
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+      logger.info(
+        `Response received from Data Collection service: ${proxyRes.statusCode}`
+      );
+
+      return proxyResData;
+    },
+  })
+);
+
+app.use(
+  "/v1/thirdparty/collection",
+  //validateToken,
+  proxy(process.env.DATACOLLECTION_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+      proxyReqOpts.headers["Content-Type"] = "application/json";
+      // Forward authentication headers to collection-service
+      if (srcReq.headers["x-api-key"]) {
+        proxyReqOpts.headers["x-api-key"] = srcReq.headers["x-api-key"];
+      }
+      if (srcReq.headers["authorization"]) {
+        proxyReqOpts.headers["authorization"] = srcReq.headers["authorization"];
+      }
+      if (srcReq.headers["x-signature"]) {
+        proxyReqOpts.headers["x-signature"] = srcReq.headers["x-signature"];
+      }
       // Ensure language header is forwarded
       if (srcReq.language) {
         proxyReqOpts.headers["x-language"] = srcReq.language;

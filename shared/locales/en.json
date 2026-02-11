@@ -77,6 +77,7 @@
     "amount_invalid": "Invalid amount",
     "required_fields_missing": "Required fields are missing",
     "missing_required_fields": "Missing required fields",
+    "missing_credentials": "Username and password are required",
     "missing_deposit_fields": "Missing required deposit fields",
     "missing_withdraw_fields": "Missing required withdrawal fields",
     "missing_id_number": "ID number is required",
@@ -99,4 +100,9 @@
     "forms_not_found": "Forms not found",
     "service_unavailable": "Data collection service is temporarily unavailable"
   }
+    ,
+    "urubutopay": {
+      "auth_success": "Authentication successful",
+      "auth_failed": "Authentication failed"
+    }
 }

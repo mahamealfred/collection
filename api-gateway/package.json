@@ -23,6 +23,7 @@
     "jsonwebtoken": "^9.0.2",
     "rate-limit-redis": "^4.2.0",
     "rate-limiter-flexible": "^7.1.0",
+    "swagger-ui-express": "^5.0.0",
     "winston": "^3.17.0"
   },
   "devDependencies": {
