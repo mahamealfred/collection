@@ -176,7 +176,7 @@ app.use(
   proxy(process.env.CLIENT_SERVICE_URL, proxyOptions)
 );
 
-//
+//URUBUTO PAY PROXY
 app.use(
   "/v1/thirdparty/urubutopay",
   //validateToken,
