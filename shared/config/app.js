@@ -1,7 +1,52 @@
 import dotenv from "dotenv";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
-// Load environment variables
-dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const workspaceRoot = path.resolve(__dirname, "..", "..");
+
+const parseCorsOrigin = (corsOriginValue) => {
+  if (!corsOriginValue || corsOriginValue.trim() === "") {
+    return "*";
+  }
+
+  const normalized = corsOriginValue.trim();
+  if (normalized === "*") {
+    return "*";
+  }
+
+  const origins = normalized
+    .split(",")
+    .map((origin) => origin.trim())
+    .filter(Boolean);
+
+  return origins.length <= 1 ? origins[0] : origins;
+};
+
+// Load shared environment first, then allow service-level overrides.
+const explicitEnvPath = process.env.ENV_FILE
+  ? path.isAbsolute(process.env.ENV_FILE)
+    ? process.env.ENV_FILE
+    : path.resolve(process.cwd(), process.env.ENV_FILE)
+  : null;
+
+const sharedEnvPath = path.join(workspaceRoot, ".env");
+const serviceEnvPath = path.join(process.cwd(), ".env");
+
+if (explicitEnvPath && fs.existsSync(explicitEnvPath)) {
+  dotenv.config({ path: explicitEnvPath });
+} else {
+  if (fs.existsSync(sharedEnvPath)) {
+    dotenv.config({ path: sharedEnvPath });
+  }
+
+  // Let service-specific values (for example PORT) override shared defaults.
+  if (fs.existsSync(serviceEnvPath) && serviceEnvPath !== sharedEnvPath) {
+    dotenv.config({ path: serviceEnvPath, override: true });
+  }
+}
 
 /**
  * Application Configuration Manager
@@ -22,7 +67,7 @@ class AppConfig {
         port: parseInt(process.env.PORT) || 4005,
         host: process.env.HOST || "localhost",
         env: process.env.NODE_ENV || "development",
-        corsOrigin: process.env.CORS_ORIGIN || "*",
+        corsOrigin: parseCorsOrigin(process.env.CORS_ORIGIN),
         bodyLimit: process.env.BODY_LIMIT || "50mb"
       },
 

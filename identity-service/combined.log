@@ -6020,3 +6020,255 @@
 {"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-02-23T23:15:30.440Z","userId":743}
 {"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-02-23T23:55:15.526Z"}
 {"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-02-23T23:55:15.988Z","userId":743}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-02-24T09:19:32.662Z"}
+{"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-02-24T09:19:33.840Z","userId":743}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-02-24T09:20:53.066Z"}
+{"agentCategory":"Corporate","level":"warn","message":"Successfully logged in","name":"DDIN CORPORATE USER","phoneNumber":null,"service":"identity-service","timestamp":"2026-02-24T09:20:53.531Z","userId":277}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-02-24T09:25:39.822Z"}
+{"agentCategory":"Corporate","level":"warn","message":"Successfully logged in","name":"DDIN CORPORATE USER","phoneNumber":null,"service":"identity-service","timestamp":"2026-02-24T09:25:40.522Z","userId":277}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-02-24T09:27:31.787Z"}
+{"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-02-24T09:27:32.241Z","userId":743}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-02-24T09:37:32.302Z"}
+{"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-02-24T09:37:33.120Z","userId":743}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-02-24T09:37:56.177Z"}
+{"agentCategory":"Corporate","level":"warn","message":"Successfully logged in","name":"DDIN CORPORATE USER","phoneNumber":null,"service":"identity-service","timestamp":"2026-02-24T09:37:56.571Z","userId":277}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-02-24T09:55:42.208Z"}
+{"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-02-24T09:55:42.993Z","userId":743}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-02-24T10:08:52.088Z"}
+{"agentCategory":"Corporate","level":"warn","message":"Successfully logged in","name":"DDIN CORPORATE USER","phoneNumber":null,"service":"identity-service","timestamp":"2026-02-24T10:08:52.835Z","userId":277}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-02-24T10:36:34.093Z"}
+{"agentCategory":"Corporate","level":"warn","message":"Successfully logged in","name":"DDIN CORPORATE USER","phoneNumber":null,"service":"identity-service","timestamp":"2026-02-24T10:36:34.589Z","userId":277}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-02-24T11:09:21.754Z"}
+{"agentCategory":"Corporate","level":"warn","message":"Successfully logged in","name":"DDIN CORPORATE USER","phoneNumber":null,"service":"identity-service","timestamp":"2026-02-24T11:09:22.329Z","userId":277}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-02T09:35:39.121Z"}
+{"agentCategory":"Corporate","level":"warn","message":"Successfully logged in","name":"DDIN CORPORATE USER","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-02T09:35:40.444Z","userId":277}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-02T09:35:51.967Z"}
+{"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-02T09:35:52.443Z","userId":743}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-04T07:27:33.230Z"}
+{"agentCategory":"Corporate","level":"warn","message":"Successfully logged in","name":"DDIN CORPORATE USER","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-04T07:27:33.817Z","userId":277}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-05T14:48:42.922Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-05T14:48:43.595Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-05T15:33:12.609Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-05T15:33:13.005Z","username":"Mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-05T15:33:24.396Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-05T15:33:24.740Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-05T15:38:37.041Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-05T15:38:37.430Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-05T16:22:01.490Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-05T16:22:02.229Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-05T17:11:50.804Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-05T17:11:54.213Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-07T11:56:15.127Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-07T11:56:15.664Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-07T12:56:35.511Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-07T12:56:36.048Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-07T13:01:02.634Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-07T13:01:03.020Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-07T13:06:19.932Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-07T13:06:20.416Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-07T13:22:27.903Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-07T13:22:28.322Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-07T13:42:19.338Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-07T13:42:19.872Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-07T13:51:25.994Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-07T13:51:26.385Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-07T14:12:19.675Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-07T14:12:20.135Z","username":"Mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-07T14:12:28.692Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-07T14:12:29.162Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-07T14:14:36.202Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-07T14:14:36.685Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-07T14:32:22.440Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-07T14:32:22.831Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T18:10:38.677Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-08T18:10:39.924Z","username":"Mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T18:10:47.500Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T18:10:48.226Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T18:14:34.685Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T18:14:35.064Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T18:43:50.374Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T18:43:50.758Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T19:02:25.111Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T19:02:25.676Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T19:27:43.360Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T19:27:43.759Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T19:59:45.476Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-08T19:59:45.864Z","username":"Mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T19:59:55.570Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T19:59:55.887Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T20:16:09.666Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T20:16:10.057Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T20:37:03.714Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T20:37:04.132Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T20:49:57.059Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T20:49:57.536Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T21:10:57.712Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T21:10:58.143Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T21:12:53.072Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T21:12:53.436Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T21:14:30.565Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T21:14:30.910Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T21:37:50.318Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T21:37:50.687Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T21:40:09.781Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T21:40:10.315Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T21:48:34.423Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-08T21:48:34.772Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-08T21:54:48.570Z"}
+{"agentCategory":"Corporate","level":"warn","message":"Successfully logged in","name":"Coporate Mahame","phoneNumber":"0789595000","service":"identity-service","timestamp":"2026-03-08T21:54:48.946Z","userId":188}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-09T06:16:03.123Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-09T06:16:03.808Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-09T07:52:51.160Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-09T07:52:51.748Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-09T07:57:16.202Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-09T07:57:16.587Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-09T09:10:00.781Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-09T09:10:02.468Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-09T09:42:55.254Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-09T09:42:55.888Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-09T09:45:37.206Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-09T09:45:37.552Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-09T09:49:18.972Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-09T09:49:19.336Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-13T14:18:40.439Z"}
+{"error":"Table 'ddin.refreshtokens' doesn't exist in engine","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-13T14:18:41.171Z","username":"Mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-13T14:40:16.118Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-13T14:40:16.522Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-13T14:49:02.237Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-13T14:49:02.619Z","username":"Mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-13T14:49:15.441Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-13T14:49:15.778Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-15T17:11:04.165Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-15T17:11:04.655Z","username":"Mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-15T17:11:18.761Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-15T17:11:19.063Z","username":"Mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-15T17:11:24.865Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-15T17:11:25.370Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-15T17:30:33.043Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-15T17:30:33.497Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-15T18:00:11.825Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-15T18:00:12.482Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-15T18:11:03.439Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-15T18:11:07.330Z","username":"Mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-15T18:11:18.670Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-15T18:11:19.166Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-15T19:02:12.140Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-15T19:02:12.548Z","username":"admin@mola.rw"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-15T19:03:48.399Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-15T19:03:48.896Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T08:23:13.452Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-16T08:23:13.952Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T08:52:09.793Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-16T08:52:10.208Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T08:53:26.065Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-16T08:53:26.423Z","username":"User1"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T08:53:34.236Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-16T08:53:34.550Z","username":"User1"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T09:31:21.262Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-16T09:31:21.791Z","username":"staff"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T10:57:19.303Z"}
+{"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-16T10:57:19.731Z","userId":743}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T12:42:11.990Z"}
+{"agentCategory":"Corporate","level":"warn","message":"Successfully logged in","name":"DDIN CORPORATE USER","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-16T12:42:12.423Z","userId":277}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T13:01:55.820Z"}
+{"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-16T13:01:56.315Z","userId":743}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T19:20:38.769Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-16T19:20:39.320Z","username":"Mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T19:21:12.885Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-16T19:21:13.260Z","username":"Liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T19:21:19.248Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-16T19:21:19.605Z","username":"Liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T19:21:53.727Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-16T19:21:54.041Z","username":"cmahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T19:22:00.335Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-16T19:22:01.071Z","username":"cmahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T19:22:33.006Z"}
+{"agentCategory":"TCP","level":"warn","message":"Successfully logged in","name":"Mahame Alfred","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-16T19:22:33.783Z","userId":1035}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-16T21:16:38.574Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-16T21:16:39.108Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T07:52:09.572Z"}
+{"agentCategory":"TCP","level":"warn","message":"Successfully logged in","name":"Mahame Alfred","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-17T07:52:10.029Z","userId":1035}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T07:52:41.368Z"}
+{"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-17T07:52:41.734Z","userId":743}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T08:00:33.599Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-17T08:00:34.012Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T08:13:10.481Z"}
+{"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-17T08:13:10.900Z","userId":743}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T08:33:43.388Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-17T08:33:45.362Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T08:35:31.317Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-17T08:35:31.710Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T08:36:59.811Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Alfred Mahame","phoneNumber":"0789595309","service":"identity-service","timestamp":"2026-03-17T08:37:00.273Z","userId":58}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T08:43:51.900Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-17T08:43:52.401Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T09:19:08.663Z"}
+{"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-17T09:19:09.082Z","userId":743}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T09:19:58.317Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-17T09:19:58.656Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T09:29:21.298Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-17T09:29:21.655Z","username":"Mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T09:30:16.083Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-17T09:30:16.410Z","username":"liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T09:30:29.658Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-17T09:30:29.963Z","username":"liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T09:30:41.629Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-17T09:30:41.950Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T09:50:58.803Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-17T09:50:59.291Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-17T11:19:36.205Z"}
+{"agentCategory":"Staff","level":"warn","message":"Successfully logged in","name":"Staff Group","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-17T11:19:36.628Z","userId":743}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-18T06:35:20.724Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-18T06:35:21.190Z","username":"liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-18T06:35:40.859Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-18T06:35:41.259Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-18T06:52:37.147Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-18T06:52:37.526Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-18T07:54:58.838Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-18T07:54:59.225Z","username":"Mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-18T07:55:09.431Z"}
+{"agentCategory":"TCP","level":"warn","message":"Successfully logged in","name":"Mahame Alfred","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-18T07:55:09.781Z","userId":1035}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-19T08:38:23.913Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-19T08:38:24.355Z","username":"liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-19T08:38:35.398Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-19T08:38:35.740Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-19T08:41:53.498Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-19T08:41:53.870Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-19T08:44:21.080Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-19T08:44:21.417Z","username":"liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-19T08:44:31.585Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-19T08:44:31.909Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-19T08:53:10.063Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-19T08:53:10.478Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T08:26:06.182Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-25T08:26:06.594Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T08:51:52.314Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-25T08:51:52.792Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T09:05:49.293Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-25T09:05:49.659Z","username":"liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T09:06:22.214Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-25T09:06:22.523Z","username":"liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T09:09:04.993Z"}
+{"error":{"errorCode":"INVALID_CREDENTIALS","errorDetails":"Invalid username / password"},"level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-25T09:09:05.352Z","username":"liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T09:09:19.799Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-25T09:09:20.108Z","username":"liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T09:10:42.203Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-25T09:10:42.515Z","username":"liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T09:10:46.533Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-25T09:10:46.846Z","username":"liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T09:44:58.983Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-25T09:44:59.347Z","username":"liveagent"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T09:45:44.203Z"}
+{"error":"connect ECONNREFUSED 127.0.0.1:3306","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-25T09:45:44.524Z","username":"mahame"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T09:47:15.736Z"}
+{"agentCategory":"TCP","level":"warn","message":"Successfully logged in","name":"Mahame Alfred","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-25T09:47:16.097Z","userId":1035}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T09:47:21.422Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-25T09:47:21.778Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T10:23:07.437Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-25T10:23:07.819Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T12:09:23.603Z"}
+{"agentCategory":"Agent","level":"warn","message":"Successfully logged in","name":"Live Agent UAT","phoneNumber":null,"service":"identity-service","timestamp":"2026-03-25T12:09:24.048Z","userId":4}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T14:29:15.955Z"}
+{"error":"getaddrinfo ENOTFOUND core.ddin.rw","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-25T14:29:16.496Z","username":"staff"}
+{"level":"info","message":"Login endpoint hit...","service":"identity-service","timestamp":"2026-03-25T14:29:32.057Z"}
+{"error":"getaddrinfo ENOTFOUND core.ddin.rw","level":"error","message":"Error during login:","service":"identity-service","timestamp":"2026-03-25T14:29:32.531Z","username":"liveagent"}

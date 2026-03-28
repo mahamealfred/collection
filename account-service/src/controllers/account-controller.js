@@ -115,10 +115,45 @@ export const getAccountsBalance = async (req, res) => {
                 };
             });
 
+            const delayedCommissionAccountName = "Agent Delayed Commission A/C";
+            const instantCommissionAccountName = "Agent Instant Commission A/C";
+            const floatAccountName = "Agent Float A/C";
+
+            const orderedAccounts = [...formattedAccounts];
+
+            const delayedCommissionIndex = orderedAccounts.findIndex(
+                account => account.accountName === delayedCommissionAccountName
+            );
+
+            if (delayedCommissionIndex !== -1) {
+                const [delayedCommissionAccount] = orderedAccounts.splice(delayedCommissionIndex, 1);
+                orderedAccounts.unshift(delayedCommissionAccount);
+            }
+
+            const floatAccountIndex = orderedAccounts.findIndex(
+                account => account.accountName === floatAccountName
+            );
+
+            if (floatAccountIndex !== -1) {
+                const [floatAccount] = orderedAccounts.splice(floatAccountIndex, 1);
+                const floatAccountTargetIndex = Math.min(1, orderedAccounts.length);
+                orderedAccounts.splice(floatAccountTargetIndex, 0, floatAccount);
+            }
+
+            const instantCommissionIndex = orderedAccounts.findIndex(
+                account => account.accountName === instantCommissionAccountName
+            );
+
+            if (instantCommissionIndex !== -1) {
+                const [instantCommissionAccount] = orderedAccounts.splice(instantCommissionIndex, 1);
+                const instantCommissionTargetIndex = Math.min(2, orderedAccounts.length);
+                orderedAccounts.splice(instantCommissionTargetIndex, 0, instantCommissionAccount);
+            }
+
               return res.status(200).json({success:true, message:'Success', 
-                accounts: formattedAccounts,
+                accounts: orderedAccounts,
                 data:{
-                 accounts: formattedAccounts   
+                 accounts: orderedAccounts   
                 },
                 creditBalance: 0,
              });
