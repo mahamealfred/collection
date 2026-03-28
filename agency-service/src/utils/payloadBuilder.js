@@ -1,25 +1,39 @@
 //Airtime
-export const buildAirtimePayload = ({
-  amount,
-  requestId,
-  ccy,
-  customerId,
-  clientPhone,
-  agentCategory
-}) => {
-
+export const buildAirtimePayload = ({ amount, requestId, ccy, customerId, clientPhone, agentCategory }) => {
   let transferTypeId = "66";
   let toMemberId = '18';
-  if (agentCategory === 'Corporate') {
+
+  // Clean the customerId by removing any non-digit characters for validation
+  const cleanedNumber = customerId.toString().replace(/\D/g, '');
+
+  // Check if it's an MTN number
+  const isMtnNumber = /^(078|079|25078|25079)/.test(cleanedNumber);
+
+  // Check if it's an Airtel number
+  const isAirtelNumber = /^(072|073|25072|25073)/.test(cleanedNumber);
+
+  // For MTN numbers, set transferTypeId to 130 for all categories except Corporate
+  if (isMtnNumber && agentCategory !== 'Corporate') {
+    transferTypeId = "130";
+    toMemberId = '18';
+  }
+  // For Corporate
+  else if (agentCategory === 'Corporate') {
     transferTypeId = "67";
     toMemberId = '18';
-  } else if (agentCategory === 'TCP') {
+  }
+  // For TCP
+  else if (agentCategory === 'TCP') {
     transferTypeId = "114";
     toMemberId = '18';
-  } else if (agentCategory === 'Client') {
+  }
+  // For Client
+  else if (agentCategory === 'Client') {
     transferTypeId = "116";
     toMemberId = '18';
   }
+  // For Airtel or other categories, it will use the default transferTypeId "66"
+
   return {
     amount,
     toMemberId: toMemberId,
@@ -27,24 +41,11 @@ export const buildAirtimePayload = ({
     currencySymbol: ccy,
     description: 'Airtime Purchase',
     customValues: [
-      {
-        internalName: "trans_id",
-        fieldId: "85",
-        value: requestId
-      },
-      {
-        internalName: "net_amount",
-        fieldId: "87",
-        value: amount
-      },
-      {
-        internalName: "clientphone",
-        fieldId: "90",
-        value: customerId
-      },
-
+      { internalName: "trans_id", fieldId: "85", value: requestId },
+      { internalName: "net_amount", fieldId: "87", value: amount },
+    //  { internalName: "clientphone", fieldId: "90", value: customerId },
     ],
-  }
+  };
 };
 //Electricity
 export const buildElecticityPayload = ({
@@ -156,8 +157,8 @@ export const buildBulkSMSPindoPayload = ({
   customerId,
   clientPhone,
   agentCategory
-}) =>{
-   let transferTypeId = "31";
+}) => {
+  let transferTypeId = "31";
   let toMemberId = '3';
   if (agentCategory === 'Corporate') {
     transferTypeId = "38";
@@ -165,17 +166,17 @@ export const buildBulkSMSPindoPayload = ({
   } else if (agentCategory === 'TCP') {
     transferTypeId = "31";
     toMemberId = '3';
-  }else if (agentCategory === 'Client') {
+  } else if (agentCategory === 'Client') {
     transferTypeId = "116";
     toMemberId = '3';
-  } 
+  }
   return {
 
-  toMemberId: toMemberId,
-  amount: amount,
-  transferTypeId:transferTypeId,
-  currencySymbol: "Rwf",
-  description: "Bulk SMS"
+    toMemberId: toMemberId,
+    amount: amount,
+    transferTypeId: transferTypeId,
+    currencySymbol: "Rwf",
+    description: "Bulk SMS"
   }
 };
 
@@ -191,7 +192,7 @@ export const buildRRABillerPayload = ({
   netAmount,
   agentCategory
 }) => {
-   let transferTypeId = "82";
+  let transferTypeId = "82";
   let toMemberId = '18';
   if (agentCategory === 'Corporate') {
     transferTypeId = "83";
@@ -199,46 +200,46 @@ export const buildRRABillerPayload = ({
   } else if (agentCategory === 'TCP') {
     transferTypeId = "82";
     toMemberId = '18';
-  }else if (agentCategory === 'Client') {
+  } else if (agentCategory === 'Client') {
     transferTypeId = "116";
     toMemberId = '18';
   }
-  
-  return{
 
-  toMemberId: toMemberId,
-  amount: amount,
-  transferTypeId: transferTypeId,
-  currencySymbol: ccy,
-  description: "RRA Payment",
-  customValues: [
-    {
-      internalName: "tax_identification_number",
-      fieldId: "82",
-      value: customerId
-    },
-    {
-      internalName: "tax_document_id",
-      fieldId: "84",
-      value: customerId
-    },
-    {
-      internalName: "taxpayer",
-      fieldId: "89",
-      value: clientPhone
-    },
-    {
-      internalName: "trans_id",
-      fieldId: "118",
-      value: requestId
-    },
-    {
-      internalName: "net_amount",
-      fieldId: "119",
-      value: netAmount
-    }
-  ]
-}
+  return {
+
+    toMemberId: toMemberId,
+    amount: amount,
+    transferTypeId: transferTypeId,
+    currencySymbol: ccy,
+    description: "RRA Payment",
+    customValues: [
+      {
+        internalName: "tax_identification_number",
+        fieldId: "82",
+        value: customerId
+      },
+      {
+        internalName: "tax_document_id",
+        fieldId: "84",
+        value: customerId
+      },
+      {
+        internalName: "taxpayer",
+        fieldId: "89",
+        value: clientPhone
+      },
+      {
+        internalName: "trans_id",
+        fieldId: "118",
+        value: requestId
+      },
+      {
+        internalName: "net_amount",
+        fieldId: "119",
+        value: netAmount
+      }
+    ]
+  }
 };
 
 //Ecobank Cash In
